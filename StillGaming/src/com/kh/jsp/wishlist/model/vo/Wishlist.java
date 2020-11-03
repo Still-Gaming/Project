@@ -1,14 +1,14 @@
-package com.kh.jsp.cart.model.vo;
+package com.kh.jsp.wishlist.model.vo;
 
-public class Cart {
+public class Wishlist {
 	private String memberId;
 	private int gminfoNum;
 
-	public Cart() {
+	public Wishlist() {
 		super();
 	}
 
-	public Cart(String memberId, int gminfoNum) {
+	public Wishlist(String memberId, int gminfoNum) {
 		super();
 		this.memberId = memberId;
 		this.gminfoNum = gminfoNum;
@@ -16,7 +16,7 @@ public class Cart {
 
 	@Override
 	public String toString() {
-		return "Cart [memberId=" + memberId + ", gminfoNum=" + gminfoNum + "]";
+		return "Wishlist [memberId=" + memberId + ", gminfoNum=" + gminfoNum + "]";
 	}
 
 	public String getMemberId() {

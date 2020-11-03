@@ -1,22 +1,32 @@
-package com.kh.jsp.cart.model.vo;
+package com.kh.jsp.ord.model.vo;
 
-public class Cart {
+public class Ord {
+	private int ordNo;
 	private String memberId;
 	private int gminfoNum;
 
-	public Cart() {
+	public Ord() {
 		super();
 	}
 
-	public Cart(String memberId, int gminfoNum) {
+	public Ord(int ordNo, String memberId, int gminfoNum) {
 		super();
+		this.ordNo = ordNo;
 		this.memberId = memberId;
 		this.gminfoNum = gminfoNum;
 	}
 
 	@Override
 	public String toString() {
-		return "Cart [memberId=" + memberId + ", gminfoNum=" + gminfoNum + "]";
+		return "Ord [ordNo=" + ordNo + ", memberId=" + memberId + ", gminfoNum=" + gminfoNum + "]";
+	}
+
+	public int getOrdNo() {
+		return ordNo;
+	}
+
+	public void setOrdNo(int ordNo) {
+		this.ordNo = ordNo;
 	}
 
 	public String getMemberId() {

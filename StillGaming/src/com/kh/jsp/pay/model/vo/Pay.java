@@ -2,28 +2,28 @@ package com.kh.jsp.pay.model.vo;
 
 public class Pay {
 	private int payNo;
-	private int orderNo;
-	private String option;
-	private String cardCompany;
-	private String status;
-	
+	private int ordNo;
+	private int payMethod;
+	private String payCompany;
+	private char payStatus;
+
 	public Pay() {
 		super();
 	}
-	
-	public Pay(int payNo, int orderNo, String option, String cardCompany, String status) {
+
+	public Pay(int payNo, int ordNo, int payMethod, String payCompany, char payStatus) {
 		super();
 		this.payNo = payNo;
-		this.orderNo = orderNo;
-		this.option = option;
-		this.cardCompany = cardCompany;
-		this.status = status;
+		this.ordNo = ordNo;
+		this.payMethod = payMethod;
+		this.payCompany = payCompany;
+		this.payStatus = payStatus;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Pay [payNo=" + payNo + ", orderNo=" + orderNo + ", option=" + option + ", cardCompany=" + cardCompany
-				+ ", status=" + status + "]";
+		return "Pay [payNo=" + payNo + ", ordNo=" + ordNo + ", payMethod=" + payMethod + ", payCompany=" + payCompany
+				+ ", payStatus=" + payStatus + "]";
 	}
 
 	public int getPayNo() {
@@ -34,35 +34,35 @@ public class Pay {
 		this.payNo = payNo;
 	}
 
-	public int getOrderNo() {
-		return orderNo;
+	public int getOrdNo() {
+		return ordNo;
 	}
 
-	public void setOrderNo(int orderNo) {
-		this.orderNo = orderNo;
+	public void setOrdNo(int ordNo) {
+		this.ordNo = ordNo;
 	}
 
-	public String getOption() {
-		return option;
+	public int getPayMethod() {
+		return payMethod;
 	}
 
-	public void setOption(String option) {
-		this.option = option;
+	public void setPayMethod(int payMethod) {
+		this.payMethod = payMethod;
 	}
 
-	public String getCardCompany() {
-		return cardCompany;
+	public String getPayCompany() {
+		return payCompany;
 	}
 
-	public void setCardCompany(String cardCompany) {
-		this.cardCompany = cardCompany;
+	public void setPayCompany(String payCompany) {
+		this.payCompany = payCompany;
 	}
 
-	public String getStatus() {
-		return status;
+	public char getPayStatus() {
+		return payStatus;
 	}
 
-	public void setStatus(String status) {
-		this.status = status;
+	public void setPayStatus(char payStatus) {
+		this.payStatus = payStatus;
 	}
 }
