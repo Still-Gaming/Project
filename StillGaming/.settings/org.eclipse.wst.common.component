@@ -2,7 +2,7 @@
     <wb-module deploy-name="StillGaming">
         <wb-resource deploy-path="/" source-path="/webapps" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="sg"/>
         <property name="java-output-path" value="/StillGaming/webapps/WEB-INF/classes"/>
+        <property name="context-root" value="StillGaming"/>
     </wb-module>
 </project-modules>
