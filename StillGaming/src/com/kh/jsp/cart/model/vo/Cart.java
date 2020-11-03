@@ -30,7 +30,7 @@ public class Cart {
 	public int getGminfoNum() {
 		return gminfoNum;
 	}
-
+ 
 	public void setGminfoNum(int gminfoNum) {
 		this.gminfoNum = gminfoNum;
 	}
